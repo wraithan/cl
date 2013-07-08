@@ -75,6 +75,8 @@ var server = http.createServer(function(req, res) {
   }
 })
 
-server.listen(4567, function() {
-  console.log('Listening on: http://localhost:4567')
+var port = process.env.port || 4567
+
+server.listen(port, function() {
+  console.log('Listening on: http://localhost:' + port)
 })

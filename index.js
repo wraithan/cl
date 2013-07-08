@@ -75,7 +75,7 @@ var server = http.createServer(function(req, res) {
   }
 })
 
-var port = process.env.port || 4567
+var port = process.env.PORT || 4567
 
 server.listen(port, function() {
   console.log('Listening on: http://localhost:' + port)
